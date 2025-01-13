@@ -17,4 +17,8 @@ public class ListarPedidosClienteService implements ListarPedidosClienteUseCase 
     public List<Pedido> listarPedidosCliente(Long clienteId) {
         return pedidoRepositoryPort.listarPedidosCliente(clienteId);
     }
+
+    public List<Pedido> listarPedidos() {
+        return pedidoRepositoryPort.listarPedidos();
+    }
 }
