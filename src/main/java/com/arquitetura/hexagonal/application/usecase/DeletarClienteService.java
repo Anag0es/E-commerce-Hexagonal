@@ -1,6 +1,6 @@
 package com.arquitetura.hexagonal.application.usecase;
 
-import com.arquitetura.hexagonal.application.port.in.DeletarClienteUseCase;
+import com.arquitetura.hexagonal.application.port.in.cliente.DeletarClienteUseCase;
 import com.arquitetura.hexagonal.application.port.out.ClienteRepositoryPort;
 
 public class DeletarClienteService implements DeletarClienteUseCase {

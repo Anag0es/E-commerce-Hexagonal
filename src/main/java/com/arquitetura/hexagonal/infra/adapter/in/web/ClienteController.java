@@ -1,9 +1,9 @@
 package com.arquitetura.hexagonal.infra.adapter.in.web;
 
-import com.arquitetura.hexagonal.application.port.in.ConsultarClienteUseCase;
-import com.arquitetura.hexagonal.application.port.in.CriarClienteUseCase;
+import com.arquitetura.hexagonal.application.port.in.cliente.ConsultarClienteUseCase;
+import com.arquitetura.hexagonal.application.port.in.cliente.CriarClienteUseCase;
 import com.arquitetura.hexagonal.application.dto.CriarClienteDto;
-import com.arquitetura.hexagonal.application.port.in.DeletarClienteUseCase;
+import com.arquitetura.hexagonal.application.port.in.cliente.DeletarClienteUseCase;
 import com.arquitetura.hexagonal.domain.model.Cliente;
 import org.springframework.web.bind.annotation.*;
 

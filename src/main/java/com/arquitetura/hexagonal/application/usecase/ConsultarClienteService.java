@@ -1,6 +1,6 @@
 package com.arquitetura.hexagonal.application.usecase;
 
-import com.arquitetura.hexagonal.application.port.in.ConsultarClienteUseCase;
+import com.arquitetura.hexagonal.application.port.in.cliente.ConsultarClienteUseCase;
 import com.arquitetura.hexagonal.application.port.out.ClienteRepositoryPort;
 import com.arquitetura.hexagonal.domain.model.Cliente;
 

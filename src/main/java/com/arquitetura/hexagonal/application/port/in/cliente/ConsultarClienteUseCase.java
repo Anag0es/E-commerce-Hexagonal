@@ -1,4 +1,4 @@
-package com.arquitetura.hexagonal.application.port.in;
+package com.arquitetura.hexagonal.application.port.in.cliente;
 
 import com.arquitetura.hexagonal.domain.model.Cliente;
 
