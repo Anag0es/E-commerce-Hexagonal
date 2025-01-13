@@ -2,7 +2,7 @@ package com.arquitetura.hexagonal.application.dto;
 
 import java.util.List;
 
-public class CriarPedidoRequest {
+public class CriarPedidoDto {
 
     private Long clienteId;
     private List<Long> idProdutos;

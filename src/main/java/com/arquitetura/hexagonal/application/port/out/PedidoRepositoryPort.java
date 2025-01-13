@@ -12,7 +12,7 @@ public interface PedidoRepositoryPort {
 
     public void deletarPedido(Long pedidoId);
 
-    public Pedido consultarPedido(Long pedidoId);
-
     public List<Pedido> listarPedidosCliente(Long clienteId);
+
+    public List<Pedido> listarPedidos();
 }

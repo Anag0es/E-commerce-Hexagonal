@@ -1,13 +1,12 @@
 package com.arquitetura.hexagonal.application.usecase;
 
-import com.arquitetura.hexagonal.application.dto.CriarPedidoRequest;
+import com.arquitetura.hexagonal.application.dto.CriarPedidoDto;
 import com.arquitetura.hexagonal.application.port.in.CriarPedidoUseCase;
 import com.arquitetura.hexagonal.application.port.out.ClienteRepositoryPort;
 import com.arquitetura.hexagonal.application.port.out.PedidoRepositoryPort;
 import com.arquitetura.hexagonal.domain.model.Pedido;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 public class CriarPedidoService implements CriarPedidoUseCase{
 
@@ -21,7 +20,7 @@ public class CriarPedidoService implements CriarPedidoUseCase{
     }
 
     @Override
-    public Pedido criarPedido(CriarPedidoRequest request) {
+    public Pedido criarPedido(CriarPedidoDto request) {
 
         // 1. Validar dados de entrada
         if (request.getClienteId() == null) {

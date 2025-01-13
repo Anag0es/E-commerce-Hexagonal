@@ -4,9 +4,9 @@ import com.arquitetura.hexagonal.domain.model.Pedido;
 
 import java.util.List;
 
-public interface ListarPedidosClienteUseCase {
-
-    List<Pedido> listarPedidosCliente(Long clienteId);
+public interface ListarPedidoUseCase {
 
     List<Pedido> listarPedidos();
+
+    List<Pedido> listarPedidosCliente(Long clienteId);
 }
