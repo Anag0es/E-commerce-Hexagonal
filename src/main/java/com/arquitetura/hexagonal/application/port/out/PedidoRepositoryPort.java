@@ -15,4 +15,7 @@ public interface PedidoRepositoryPort {
     public List<Pedido> listarPedidosCliente(Long clienteId);
 
     public List<Pedido> listarPedidos();
+
+    Pedido buscarPedidoPorId(Long pedidoId);
+
 }

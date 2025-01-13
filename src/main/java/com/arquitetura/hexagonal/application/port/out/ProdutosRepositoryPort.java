@@ -17,6 +17,6 @@ public interface ProdutosRepositoryPort {
 
     public List<Produto> listarProdutos();
 
-    public List<Produto> listarProdutosPorPedido(Long pedidoId);
+    List<Produto> buscarProdutosPorIds(List<Long> idsProdutos);
 
 }
