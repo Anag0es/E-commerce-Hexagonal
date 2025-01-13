@@ -1,4 +1,4 @@
-package com.arquitetura.hexagonal.application.port.in;
+package com.arquitetura.hexagonal.application.port.in.pedido;
 
 import com.arquitetura.hexagonal.domain.model.Pedido;
 

@@ -1,4 +1,4 @@
-package com.arquitetura.hexagonal.application.port.in;
+package com.arquitetura.hexagonal.application.port.in.produto;
 
 import com.arquitetura.hexagonal.domain.model.Produto;
 

@@ -1,4 +1,4 @@
-package com.arquitetura.hexagonal.application.usecase;
+package com.arquitetura.hexagonal.application.usecase.produto;
 
 import com.arquitetura.hexagonal.application.port.out.ProdutosRepositoryPort;
 import com.arquitetura.hexagonal.domain.model.Produto;

@@ -1,4 +1,4 @@
-package com.arquitetura.hexagonal.application.usecase;
+package com.arquitetura.hexagonal.application.usecase.cliente;
 
 import com.arquitetura.hexagonal.application.port.in.cliente.DeletarClienteUseCase;
 import com.arquitetura.hexagonal.application.port.out.ClienteRepositoryPort;

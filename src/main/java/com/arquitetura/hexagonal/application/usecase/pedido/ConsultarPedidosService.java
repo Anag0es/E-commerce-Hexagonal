@@ -1,6 +1,6 @@
-package com.arquitetura.hexagonal.application.usecase;
+package com.arquitetura.hexagonal.application.usecase.pedido;
 
-import com.arquitetura.hexagonal.application.port.in.ListarPedidoUseCase;
+import com.arquitetura.hexagonal.application.port.in.pedido.ListarPedidoUseCase;
 import com.arquitetura.hexagonal.application.port.out.PedidoRepositoryPort;
 import com.arquitetura.hexagonal.domain.model.Pedido;
 
