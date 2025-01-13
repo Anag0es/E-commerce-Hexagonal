@@ -4,6 +4,8 @@ import com.arquitetura.hexagonal.application.port.in.ConsultarClienteUseCase;
 import com.arquitetura.hexagonal.application.port.out.ClienteRepositoryPort;
 import com.arquitetura.hexagonal.domain.model.Cliente;
 
+import java.util.List;
+
 public class ConsultarClienteService implements ConsultarClienteUseCase {
 
     private ClienteRepositoryPort clienteRepositoryPort;
@@ -14,5 +16,9 @@ public class ConsultarClienteService implements ConsultarClienteUseCase {
 
     public Cliente consultarCliente(Long clienteId) {
         return clienteRepositoryPort.consultarCliente(clienteId);
+    }
+
+    public List<Cliente> listarClientes() {
+        return clienteRepositoryPort.listarClientes();
     }
 }

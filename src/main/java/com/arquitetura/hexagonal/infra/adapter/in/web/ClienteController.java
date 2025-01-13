@@ -3,6 +3,7 @@ package com.arquitetura.hexagonal.infra.adapter.in.web;
 import com.arquitetura.hexagonal.application.port.in.ConsultarClienteUseCase;
 import com.arquitetura.hexagonal.application.port.in.CriarClienteUseCase;
 import com.arquitetura.hexagonal.application.dto.CriarClienteDto;
+import com.arquitetura.hexagonal.application.port.in.DeletarClienteUseCase;
 import com.arquitetura.hexagonal.domain.model.Cliente;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,11 +15,14 @@ public class ClienteController {
 
     private final ConsultarClienteUseCase consultarClienteUseCase;
     private final CriarClienteUseCase criarClienteUseCase;
+    private final DeletarClienteUseCase deletarClienteUseCase;
+
 
     public ClienteController(ConsultarClienteUseCase consultarClienteUseCase,
-                             CriarClienteUseCase criarClienteUseCase) {
+                             CriarClienteUseCase criarClienteUseCase, DeletarClienteUseCase deletarClienteUseCase) {
         this.consultarClienteUseCase = consultarClienteUseCase;
         this.criarClienteUseCase = criarClienteUseCase;
+        this.deletarClienteUseCase = deletarClienteUseCase;
     }
 
     @GetMapping
@@ -34,5 +38,10 @@ public class ClienteController {
     @PostMapping
     public void cadastrarCliente(@RequestBody CriarClienteDto criarClienteDto) {
         criarClienteUseCase.criarCliente(criarClienteDto);
+    }
+
+    @DeleteMapping
+    public void deletarCliente(@PathVariable Long clienteId) {
+        deletarClienteUseCase.deletarCliente(clienteId);
     }
 }
