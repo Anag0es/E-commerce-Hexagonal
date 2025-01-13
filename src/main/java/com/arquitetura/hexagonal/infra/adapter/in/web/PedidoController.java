@@ -1,8 +1,8 @@
 package com.arquitetura.hexagonal.infra.adapter.in.web;
 
 import com.arquitetura.hexagonal.application.dto.CriarPedidoDto;
-import com.arquitetura.hexagonal.application.port.in.CriarPedidoUseCase;
-import com.arquitetura.hexagonal.application.port.in.ListarPedidosClienteUseCase;
+import com.arquitetura.hexagonal.application.port.in.pedido.CriarPedidoUseCase;
+import com.arquitetura.hexagonal.application.port.in.pedido.ListarPedidosClienteUseCase;
 import com.arquitetura.hexagonal.domain.model.Pedido;
 import org.springframework.web.bind.annotation.*;
 
